@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+   int n;
+   cin>>n;
+   
+   while(n--){
+   	int t,rem,rev=0;
+   	  cin>>t;
+   	  while(t!=0){
+   	  	 rem=t%10;
+   	  	 rev=rev*10+rem;
+   	  	 t=t/10;
+   	  	}
+   	  	cout<<rev<<endl;
+   	}
+
+
+
+}
