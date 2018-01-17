@@ -1,0 +1,38 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+ 
+int main(){
+	   int a[200];
+	   
+      int t;
+      cin>>t;
+      while(t--){
+      	int n;
+      	a[0]=1;
+      	int m=0,rem=0;
+      	cin>>n;
+      	      for(int j=2; j<=n; j++){
+      	      	 for(int k=0; k<=m; k++){
+      	      	 	  rem=rem+a[k]*j;
+      	      	 	  a[k]=rem%10;
+      	      	 	  rem=rem/10;	  
+      	      	 	}
+      	      	 	cout<<endl;
+      	      	 	while(rem!=0){
+      	      	 		   m++;
+      	      	 		   a[m]=rem%10;
+      	      	 		   rem=rem/10;
+      	      	 		}
+      	      	
+      	      	}
+      	      	
+      	      	for(int k=m; k>=0; k--){
+      	      		 cout<<a[k];
+      	      		
+      	      		}
+      	      		cout<<endl;
+      	
+      	}
+    	   return 0;
+}
