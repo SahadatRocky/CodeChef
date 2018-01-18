@@ -1,0 +1,17 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+	  int t,res;
+	  cin>>t;
+	  
+	  while(t--){
+	  	int x,y,res;
+	  	cin>>x>>y;
+	   res=x%y;
+	   cout<<res<<endl;
+	         
+	  	}
+       return 0;
+}
