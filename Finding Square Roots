@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+	  int t,res;
+	  cin>>t;
+	  
+	  while(t--){
+	  	int x;
+	  	cin>>x;
+	  	res=sqrt(x);
+	  	
+	  	cout<<res<<endl;
+        
+	  	}
+       return 0;
+}
