@@ -1,0 +1,35 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long int ll;
+
+int HCF(int a,int b){
+	
+	if(b==0){
+	  return a;
+	  }
+	  else{
+	  	return HCF(b,a%b);
+	  	}
+	
+}
+
+int main(){
+     
+     ll t;
+     cin>>t;
+   
+     
+     while(t--){
+     	 
+     	  ll a,b;
+     	   ll hcf,lcm;
+     	  cin>>a>>b;
+     	   
+     	        hcf=HCF(a,b);
+     	        
+   
+     	cout<<hcf<<" "<<a*b/hcf<<endl;
+     	
+     	}	
+       return 0;
+}
