@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long int ll;
+
+int main(){
+	   int t;
+	   cin>>t;
+	   string s;
+	   int c;
+	   int len;
+	   while(t--){
+	   	 
+	   	cin>>s;
+	   	len=s.size();
+	   	c=0;
+	   		for(int i=0; i<len-1; i++){
+	   			  if(s[i]!=s[i+1]){
+	   			  	  c++;
+	   			  	}
+	   			}
+	     
+	     if(c<3){
+	     	cout<<"uniform"<<endl;
+	     	}
+	     	else{
+	     		cout<<"non-uniform"<<endl;
+	     		}
+	   	}
+       return 0;
+}
