@@ -1,0 +1,53 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long int ll;
+
+   int main(){
+   	  
+   	  int t;
+   	  cin>>t;
+   	  int k,n;
+   	
+   	  while(t--){
+   	  	cin>>k>>n;
+   	  	vector<char> ch(k);
+   	  	int u=0,l=0;
+   	  	for(int i=0;i<k;i++){
+   	  		cin>>ch[i];
+   	  		if(ch[i]>='A' && ch[i]<='Z'){
+   	  			 u++;
+   	  	    }
+   	  			else{
+   	  				l++;
+   	  	       } 		
+   	    } 	
+   	    
+   	    
+   	    
+    if(u<=n && l<=n){
+      			cout<<"both"<<endl;
+      			}
+      else if(u<=n){
+      	cout<<"chef"<<endl;
+      	}
+      	else if(l<=n){
+      		cout<<"brother"<<endl;
+      		}
+      		
+      			else{
+      				cout<<"none"<<endl;
+      				}
+   	    
+   	    
+   	    
+   	  	/*
+   	 for(int j=0;j<ch.size();j++){
+   	  	   cout<<ch[j];
+   	  	   }
+   	  	   cout<<endl;
+   	  	   */
+   	  	}
+   	     
+   return 0;
+
+}
