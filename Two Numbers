@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long int ll;
+
+   int main(){
+   
+   	  int t;
+   	  cin>>t;
+   	  while(t--){
+   	  	ll a,b,c=0,d=0,n;
+   	  	cin>>a>>b>>n;
+   	  	for(ll i=1;i<=n;i++){
+   	  		if(i%2!=0){
+   	  			a*=2;
+   	  			}
+   	  			else{
+   	  				b*=2;
+   	  				}
+   	  		
+   	  		}
+   	  		
+   	  		if(a>b){
+   	  			cout<<a/b<<endl;
+   	  			}
+   	  			else{
+   	  				cout<<b/a<<endl;
+   	  				}
+   	  	
+   	  	}
+   return 0;
+
+}
