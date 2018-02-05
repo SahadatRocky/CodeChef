@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long int ll;
+
+int main(){
+   
+   	  int t;
+   	  cin>>t;
+   	  while(t--){
+   	       ll a,b,x=0;
+   	       cin>>a;
+   	       for(ll i=0; i<a;i++){
+   	       	cin>>b;
+   	       	x|=b;
+   	   
+   	           }
+   	     cout<<x<<endl;
+   	  	}
+   return 0;
+
+}
